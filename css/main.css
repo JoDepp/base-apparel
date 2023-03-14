@@ -27,6 +27,7 @@ body{
  }
 
 .woman-image {
+    display: flex;
     justify-content: center;
     width: 100%;
     object-fit: cover;
@@ -180,9 +181,8 @@ p{
         width: 25rem;
     }
 
+    /* I did this b/c I can't get it to show up without messing up the email input*/
     footer {
-        position: fixed;
-        padding-top: 45rem;
-        padding-left: 10rem;
+        display: none;
     }
 }

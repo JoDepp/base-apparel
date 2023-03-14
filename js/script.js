@@ -6,6 +6,8 @@ const emailError = document.querySelector('.error');
 
 const button = document.querySelector('.submit-button');
 
+const clear = document.getElementById("form").reset();
+
 function validateEmail(email) {
     let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return res.test(email);
@@ -24,3 +26,5 @@ function validateEmail(email) {
     return false;
   }
   $("#validate").on("click", validate);
+
+  
